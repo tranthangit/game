@@ -5944,9 +5944,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Facebook.Cnds.IsReady,
 		C3.Plugins.Facebook.Acts.LogIn2,
 		C3.Plugins.Facebook.Cnds.OnLogIn,
-		C3.Plugins.TextBox.Acts.SetText,
 		C3.Plugins.Facebook.Exps.FirstName,
-		C3.Plugins.Facebook.Acts.LogOut,
+		C3.Plugins.Facebook.Cnds.OnLogOut,
 		C3.Plugins.Audio.Acts.StopAll,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Audio.Acts.SetMuted,
@@ -6048,6 +6047,7 @@ self.C3_JsPropNameTable = [
 	{obj_ads: 0},
 	{obj_controller: 0},
 	{obj_exit: 0},
+	{text_social_test: 0},
 	{text_social: 0},
 	{directio: 0},
 	{enemy_Apple: 0},
@@ -6579,7 +6579,11 @@ self.C3_ExpressionFuncs = [
 		() => "Layer visibility",
 		() => "Facebook",
 		() => "public_profile",
-		() => "Login",
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => ("Logged in as: " + f0());
+		},
+		() => "Logged in as: user",
 		() => "Mouse Hover",
 		() => "Paused Options",
 		() => 16,
