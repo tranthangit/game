@@ -5944,7 +5944,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Facebook.Cnds.IsReady,
 		C3.Plugins.Facebook.Acts.LogIn2,
 		C3.Plugins.Facebook.Cnds.OnLogIn,
-		C3.Plugins.Facebook.Exps.FirstName,
+		C3.Plugins.Facebook.Exps.FullName,
 		C3.Plugins.Facebook.Cnds.OnLogOut,
 		C3.Plugins.Audio.Acts.StopAll,
 		C3.Plugins.Audio.Acts.Play,
