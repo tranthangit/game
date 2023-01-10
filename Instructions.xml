@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter1>
+	<hint id = 'intro1'> Welcome! If you didn't set your controls in the menu, use WASD to move! </hint>
+	<hint id = 'intro2'> Press W on keyboard or A on Gamepad to short hop and hold to full hop! </hint>
+	<hint id = 'intro3'> S or X to Wall Slide(power-up) </hint>
+	<hint id = 'intro4'> Jump on Enemy heads, collect coins, don't die and see how fast it takes you to beat the boss! </hint>
+</chapter1>
