@@ -5943,7 +5943,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Browser.Acts.Close,
 		C3.Plugins.Facebook.Cnds.IsReady,
 		C3.Plugins.Facebook.Acts.LogIn2,
-		C3.Plugins.Facebook.Cnds.OnLogIn,
+		C3.Plugins.Facebook.Acts.LogOut,
+		C3.Plugins.Spritefont2.Cnds.CompareInstanceVar,
+		C3.Plugins.Facebook.Cnds.OnNameAvailable,
 		C3.Plugins.Facebook.Exps.FullName,
 		C3.Plugins.Facebook.Cnds.OnLogOut,
 		C3.Plugins.Audio.Acts.StopAll,
@@ -5952,7 +5954,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Platform.Acts.SetIgnoreInput,
 		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Behaviors.Fade.Acts.StartFade,
-		C3.Plugins.Spritefont2.Cnds.CompareInstanceVar,
 		C3.Plugins.System.Acts.GoToLayoutByName,
 		C3.Plugins.advert.Acts.CreateInterstitial,
 		C3.Plugins.System.Cnds.OnLayoutEnd,
@@ -6579,10 +6580,13 @@ self.C3_ExpressionFuncs = [
 		() => "Layer visibility",
 		() => "Facebook",
 		() => "public_profile",
+		() => 1000,
+		() => "LOGIN",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => ("Logged in as: " + f0());
 		},
+		() => "LOGOUT",
 		() => "Logged in as: user",
 		() => "Mouse Hover",
 		() => "Paused Options",
