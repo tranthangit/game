@@ -6186,7 +6186,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.OnLayoutEnd,
 		C3.Plugins.advert.Acts.ShowInterstitial,
 		C3.Plugins.advert.Cnds.OnInterstitialFailedToLoad,
-		C3.Plugins.advert.Cnds.IsShowingInterstitial
+		C3.Plugins.advert.Cnds.IsShowingInterstitial,
+		C3.Plugins.LocalStorage.Cnds.OnAllGetsComplete,
+		C3.Plugins.LocalStorage.Cnds.IsProcessingSets
 	];
 };
 self.C3_JsPropNameTable = [
@@ -6404,6 +6406,7 @@ self.C3_JsPropNameTable = [
 	{castle_tilemap: 0},
 	{ForestMap: 0},
 	{web_icon: 0},
+	{redbutton: 0},
 	{ArrowSpikes: 0},
 	{GroundEnemy: 0},
 	{Sine3: 0},
@@ -6945,7 +6948,32 @@ self.C3_ExpressionFuncs = [
 		() => "Use wall jump and wall slide (Press S) to collect the coins.",
 		() => "Well done. Levels will get more difficult from here. Good Luck!",
 		() => "End This Level2",
-		() => "ca-app-pub-6979958483922898/3343364544"
+		() => "ca-app-pub-6979958483922898/3343364544",
+		() => "LocalStorage Controls",
+		() => "LocalStorage levels",
+		() => "ReadLocal2",
+		() => "ToggleLevels2",
+		() => "val5",
+		() => "val6",
+		() => "val7",
+		() => "val8",
+		() => "GameLayout2",
+		() => "vik2",
+		() => "Neev2",
+		() => "venilv5",
+		() => "venilv6",
+		() => "Bubbles",
+		() => "Button",
+		() => "WELCOME",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (v0.GetValue() * 0);
+		},
+		() => 1999,
+		() => "DEFAULT CONTROLS: WASD",
+		() => "CURRENT CONTROLS: WASD",
+		() => "CURRENT CONTROLS: ARROW KEYS",
+		() => "CURRENT CONTROLS: GAMEPAD"
 ];
 
 
