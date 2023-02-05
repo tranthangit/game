@@ -6046,6 +6046,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.SetLayerVisible,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.LocalStorage.Acts.GetItem,
+		C3.Plugins.Spritefont2.Acts.Destroy,
 		C3.Plugins.System.Acts.CreateObject,
 		C3.Behaviors.Platform.Acts.SetDefaultControls,
 		C3.Plugins.System.Cnds.CompareVar,
